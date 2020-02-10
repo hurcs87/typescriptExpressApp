@@ -87,4 +87,24 @@ Typescript docs (https://www.typescriptlang.org/docs/handbook/basic-types.html)
 Which creates the dist filder and app.js file
 
 * Once ready you can do the usual npm start which will now run the compiled app.js file and start the server.
-# typescriptExpressApp
+
+
+Adding ejs
+
+* npm install ejs
+
+* add to app.ts
+
+  app.set('view engine', 'ejs')
+
+  app.get('/example', (req, res) => {
+      res.render('example')
+  })
+
+* create views folder
+
+* create example.ejs file and file with html content.
+
+* npm run build to rebuild server file
+
+* npm start to start server.
